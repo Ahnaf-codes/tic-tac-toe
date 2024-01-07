@@ -1,0 +1,81 @@
+:root {
+  font-size: 62.5%;
+  --bg: #ffffff;
+  --accent: #be00fe;
+  --text: #000000;
+  --error: #dc143c;
+  --shadow: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-transform: capitalize;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: var(--text);
+}
+
+#wrapper {
+  overflow: auto;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn {
+  padding: 1vw 2vw;
+  margin: 1vw;
+  background-color: var(--accent);
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 4px 20px 1px var(--shadow);
+  background-color: var(--text);
+  color: var(--accent);
+}
+
+header {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  text-align: center;
+}
+
+#heading {
+  font-size: 5.5rem;
+  margin: 1rem;
+}/*# sourceMappingURL=style.css.map */
