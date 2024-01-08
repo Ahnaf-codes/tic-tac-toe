@@ -31,10 +31,15 @@ const displayController = (() => {
     };
     boxes.forEach((box, i) => {
         box.addEventListener("click", () => {
-            gameboard.setBox(i, currentPlayer.getSign());
-            box.innerHTML = currentPlayer.getSign();
-            togglePlayer();
-            console.log("hi");
+            if (box.classList.contains("clicked")) {
+                return;
+            } else {
+                gameboard.setBox(i, currentPlayer.getSign());
+                box.innerHTML = currentPlayer.getSign();
+                box.classList.add("clicked");
+                togglePlayer();
+                console.log("hi");
+            }
         });
     });
 })();
