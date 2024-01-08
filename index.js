@@ -5,13 +5,16 @@ const player = (sign) => {
 };
 
 const gameboard = (() => {
-    const board = ["", "", "", "", "", "", "", "", ""];
+    let board = ["", "", "", "", "", "", "", "", ""];
     const setBox = (i, sign) => {
         board[i] = sign;
 
     };
+    const resetBox = () => {
+        board = ["", "", "", "", "", "", "", "", ""];
+    };
     const getBoard = () => board;
-    return { getBoard, setBox };
+    return { getBoard, setBox, resetBox };
 })();
 
 const displayController = (() => {
