@@ -78,3 +78,16 @@ h6 {
 	font-size: 5.5rem;
 	margin: 1rem;
 }
+
+#board {
+	border: #000 5px solid;
+	max-width: 60vw;
+	height: 60vw;
+	margin: auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+	border: #000 1px solid;
+}
